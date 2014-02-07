@@ -4,7 +4,9 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Will Ogden'
 SITENAME = u'willo.gd/en'
+SITESUBTITLE = u'Web Developer, Father, Cliché'
 SITEURL = '/en'
+GITHUB_URL = 'http://github.com/willogden/'
 
 TIMEZONE = 'Europe/Paris'
 
@@ -14,6 +16,7 @@ DEFAULT_LANG = u'en'
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
+DISPLAY_CATEGORIES_ON_MENU = True
 
 # Blogroll
 LINKS =  (('Pelican', 'http://getpelican.com/'),
@@ -33,3 +36,5 @@ DEFAULT_PAGINATION = 10
 PATH = 'content/'
 OUTPUT_PATH = 'en/'
 THEME = "themes/pure"
+
+MENUITEMS = [('Home','/en')]

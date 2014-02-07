@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="posts">
+	{% block content_title %}
+    <h1>Recent Posts</h1>
+    {% endblock %}
+
+    {% for article in articles_page.object_list %}
+    <section class="post">
+        <header class="post-header">
+            <img class="post-avatar" alt="" height="48" width="48" src="{{ SITEURL}}/images/avatar.jpg">
+
+            <h2 class="post-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+
+            <p class="post-meta">
+                {% if article.author %}By <a class="post-author" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a> under {% endif %}<a class="post-category post-category-{{ article.category }}" href="{{ article.category.url }}">{{ article.category }}</a>
+            	on <abbr class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr>
+            </p>
+        </header>
+
+        <div class="post-description">
+            {{ article.summary }} 
+        </div>
+    </section>
+    {% endfor %}
+
+</div>
+{% include 'pagination.html' %}
+
+{% endblock content %}

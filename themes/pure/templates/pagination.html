@@ -1,0 +1,13 @@
+{% if DEFAULT_PAGINATION %}
+
+<ul class="pure-paginator">
+     {% if articles_page.has_previous() %}
+    <li><a class="pure-button prev" href="{{ SITEURL }}/{{ articles_previous_page.url }}">&#171;</a></li>
+    {% endif %}
+    <li>{{ articles_page.number }} / {{ articles_paginator.num_pages }}</li>
+    {% if articles_page.has_next() %}
+    <li><a class="pure-button next" href="{{ SITEURL }}/{{ articles_next_page.url }}">&#187;</a></li>
+    {% endif %}
+</ul>
+
+{% endif %}

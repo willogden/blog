@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block head %}
+  {{ super() }}
+  {% for keyword in article.keywords %}
+    <meta name="keywords" contents="{{keyword}}" />
+  {% endfor %}
+
+  {% for description in article.description %}
+    <meta name="description" contents="{{description}}" />
+  {% endfor %}
+
+  {% for tag in article.tags %}
+    <meta name="tags" contents="{{tag}}" />
+  {% endfor %}
+
+{% endblock %}
+
+{% block content %}
+
+  <section class="post">
+      <header class="post-header">
+          <img class="post-avatar" alt="" height="48" width="48" src="{{ SITEURL}}/images/avatar.jpg">
+
+          <h2 class="post-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+
+          <p class="post-meta">
+              {% if article.author %}By <a class="post-author" href="#">{{ article.author }}</a> under {% endif %}<a class="post-category post-category-{{ article.category }}" href="#">{{ article.category }}</a>
+            on <abbr class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr>
+          </p>
+      </header>
+
+      <div class="post-description">
+          {{ article.content }} 
+      </div>
+  </section>
+
+{% endblock %}
