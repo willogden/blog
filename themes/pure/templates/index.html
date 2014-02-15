@@ -9,8 +9,6 @@
     {% for article in articles_page.object_list %}
     <section class="post">
         <header class="post-header">
-            <img class="post-avatar" alt="" height="48" width="48" src="{{ SITEURL}}/images/avatar.jpg">
-
             <h2 class="post-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
 
             <p class="post-meta">

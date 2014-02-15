@@ -50,7 +50,7 @@
     <!--<![endif]-->
     
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygment.css" />
-
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
     
     
@@ -60,13 +60,20 @@
 </head>
 <body>
 
-
-	<div id="layout" class="pure-g">
-	    <div class="sidebar pure-u-1 pure-u-med-1-4">
-	        <div class="header">
-	            <hgroup>
-	                <h1 class="brand-title">{{ SITENAME }}</h1>
-	                <h2 class="brand-tagline">{{ SITESUBTITLE }}</h2>
+    <div id="layout" class="pure-g">
+        <div class="sidebar pure-u-1 pure-u-med-1-4">
+            <div class="header">
+                <img class="post-avatar" alt="" height="80" width="80" src="{{ SITEURL}}/images/avatar.jpg">
+                <span class="social">
+                    {% for title, link in SOCIAL %}
+                        <a href="{{ link }}">
+                            <i class="fa fa-{{ title }} fa-2x"></i>
+                        </a>
+                    {% endfor %}
+                </span>
+                <hgroup>
+                    <h1 class="brand-title">{{ SITENAME }}</h1>
+                    <h2 class="brand-tagline">{{ SITESUBTITLE }}</h2>
 	            </hgroup>
 
 	            <nav class="nav">
