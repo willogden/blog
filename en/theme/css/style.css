@@ -52,6 +52,10 @@ h3 {
     font-size: 1.2em;
 }
 
+.comments {
+    padding: 50px 0 0;
+}
+
 .nav-list {
     margin: 0;
     padding: 0;

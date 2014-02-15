@@ -25,8 +25,8 @@ LINKS =  (('Pelican', 'http://getpelican.com/'),
           ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('twitter', 'http://twitter.com/will_ogden'),
+          ('github', 'http://github.com/willogden'),)
 
 DEFAULT_PAGINATION = 10
 
@@ -38,3 +38,5 @@ OUTPUT_PATH = 'en/'
 THEME = "themes/pure"
 
 MENUITEMS = [('Home','/en')]
+GOOGLE_ANALYTICS = "UA-41253807-2"
+DISQUS_SITENAME = ""

@@ -23,7 +23,8 @@
     <!--[if gt IE 8]><!-->
         <link rel="stylesheet" type="text/css" href="/en/theme/css/style.css" />
     <!--<![endif]-->
-  
+    
+    <link rel="stylesheet" type="text/css" href="/en/theme/css/pygment.css" />
 
 
     
@@ -76,7 +77,8 @@ By <a class="post-author" href="#">Will Ogden</a> under <a class="post-category 
 
       <div class="post-description">
           <p>After much searching and trying out various different syntaxes, I finally found the following which allows a boolean field to be rendered as radio buttons. This has been tested in Dango 1.4. I think a few of the StackOverflow answers related to this are for older versions of Django:</p>
-<div class="highlight"><pre><span class="n">my_boolean_field</span> <span class="o">=</span> <span class="n">forms</span><span class="p">.</span><span class="n">BooleanField</span><span class="p">(</span><span class="n">widget</span><span class="o">=</span><span class="n">forms</span><span class="p">.</span><span class="n">RadioSelect</span><span class="p">(</span><span class="n">choices</span><span class="o">=</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="err">&#39;</span><span class="n">Yes</span><span class="err">&#39;</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span> <span class="err">&#39;</span><span class="n">No</span><span class="err">&#39;</span><span class="p">))),</span> <span class="n">initial</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="n">False</span><span class="p">)</span>
+<div class="highlight"><pre><span class="n">class</span> <span class="n">MyForm</span><span class="p">(</span><span class="n">forms</span><span class="p">.</span><span class="n">Form</span><span class="p">)</span><span class="o">:</span>
+    <span class="n">my_boolean_field</span> <span class="o">=</span> <span class="n">forms</span><span class="p">.</span><span class="n">BooleanField</span><span class="p">(</span><span class="n">widget</span><span class="o">=</span><span class="n">forms</span><span class="p">.</span><span class="n">RadioSelect</span><span class="p">(</span><span class="n">choices</span><span class="o">=</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="s">&quot;Yes&quot;</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span> <span class="s">&quot;No&quot;</span><span class="p">))),</span> <span class="n">initial</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="n">False</span><span class="p">)</span>
 </pre></div> 
       </div>
   </section>
@@ -85,8 +87,16 @@ By <a class="post-author" href="#">Will Ogden</a> under <a class="post-category 
 	    </div>
 	</div>
 
-
-
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-41253807-2");
+            pageTracker._trackPageview();
+            } catch(err) {}
+    </script>
 
 
 

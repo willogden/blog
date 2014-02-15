@@ -54,6 +54,10 @@ h3 {
   color: rgb(176, 202, 219);
 }
 
+.comments {
+    padding: 50px 0 0;
+}
+
 .nav-list {
   margin: 0;
   padding: 0;
