@@ -39,4 +39,4 @@ THEME = "themes/pure"
 
 MENUITEMS = [('Home','/en')]
 GOOGLE_ANALYTICS = "UA-41253807-2"
-DISQUS_SITENAME = ""
+DISQUS_SITENAME = "willogden1"
