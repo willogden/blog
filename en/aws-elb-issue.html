@@ -76,12 +76,12 @@
 
           <p class="post-meta">
 By <a class="post-author" href="#">Will Ogden</a> under <a class="post-category post-category-DevOps" href="#">DevOps</a>
-            on <abbr class="published" title="2014-02-21T17:10:00"> Fri 21 February 2014 </abbr>
+            on <abbr class="published" title="2014-02-23T14:05:00"> Sun 23 February 2014 </abbr>
           </p>
       </header>
 
       <div class="post-description">
-          <p>Over at TrustedHousesitters.com we use Fabric to deploy changes to our AWS infrastructure. The configuration was nice and simple and it worked fine - however it had been setup to deploy to all the production servers in parallel, which effectively brought the site down (even if it did just show a friendly 503 page). As we use an ELB, the simple solution appeared to just be a rolling update; popping the instance out of the ELB, updating the code, then re-adding e.g. </p>
+          <p>Over at TrustedHousesitters.com we use Fabric to deploy changes to our AWS infrastructure. The configuration was nice and simple and it worked fine - however it had been setup to deploy to all the production servers in parallel, which effectively brought the site down (even if it did just show a friendly 503 page). As we use an ELB, the simple solution appeared to just be a rolling update; popping the instance out of the ELB, updating the code, then re-adding e.g.</p>
 <div class="highlight"><pre><span class="err">@</span><span class="n">fab</span><span class="p">.</span><span class="n">task</span>
 <span class="err">@</span><span class="n">fab</span><span class="p">.</span><span class="n">serial</span>
 <span class="n">def</span> <span class="n">rolling_deploy</span><span class="p">()</span><span class="o">:</span>

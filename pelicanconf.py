@@ -36,6 +36,7 @@ DEFAULT_PAGINATION = 10
 PATH = 'content/'
 OUTPUT_PATH = 'en/'
 THEME = "themes/pure"
+STATIC_PATHS = ['images', 'demos']
 
 MENUITEMS = [('Home','/en')]
 GOOGLE_ANALYTICS = "UA-41253807-2"

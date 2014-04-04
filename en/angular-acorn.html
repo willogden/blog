@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+      <title>willo.gd/en</title>
+    <meta name="description" content="willo.gd/en">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="/en/theme/css/main-grid-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="/en/theme/css/main-grid.css">
+    <!--<![endif]-->
+  
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="/en/theme/css/blog-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" type="text/css" href="/en/theme/css/style.css" />
+    <!--<![endif]-->
+    
+    <link rel="stylesheet" type="text/css" href="/en/theme/css/pygment.css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    
+    
+
+
+
+
+    <meta name="tags" contents="javascript" />
+
+
+</head>
+<body>
+
+    <div id="layout" class="pure-g">
+        <div class="sidebar pure-u-1 pure-u-med-1-4">
+            <div class="header">
+                <img class="post-avatar" alt="" height="80" width="80" src="/en/images/avatar.jpg">
+                <span class="social">
+                        <a href="http://twitter.com/will_ogden">
+                            <i class="fa fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="http://github.com/willogden">
+                            <i class="fa fa-github fa-2x"></i>
+                        </a>
+                </span>
+                <hgroup>
+                    <h1 class="brand-title">willo.gd/en</h1>
+                    <h2 class="brand-tagline">Web Developer, Father, Cliché</h2>
+	            </hgroup>
+
+	            <nav class="nav">
+	                <ul class="nav-list">
+	                    
+				            <li class="nav-item"><a class="pure-button" href="/en">Home</a></li>
+				            <li class="nav-item"><a class="pure-button " href="/en/pages/about.html">About</a></li>
+
+	                </ul>
+	            </nav>
+	        </div>
+	    </div>
+
+	    <div class="content pure-u-1 pure-u-med-3-4">
+	        <div>
+
+  <section class="post">
+      <header class="post-header">
+          <h2 class="post-title"><a href="/en/angular-acorn.html" rel="bookmark" title="Permalink to AngularJS Seed App Using Browserify and Gulp">AngularJS Seed App Using Browserify and Gulp</a></h2>
+
+          <p class="post-meta">
+By <a class="post-author" href="#">Will Ogden</a> under <a class="post-category post-category-Javascript" href="#">Javascript</a>
+            on <abbr class="published" title="2014-04-04T10:45:00"> Fri 04 April 2014 </abbr>
+          </p>
+      </header>
+
+      <div class="post-description">
+          <p>As my first look into using AngularJS for a major project, I really wanted to get the app structured correctly from the go get. So many times I've built an application only to have to massively refactor after the inevitable feature requests and spec creep.</p>
+<p>As a starting point I looked into the various popular seed projects. The first was <a href="https://github.com/angular/angular-seed">angular-seed</a>; this seemed the most popular, but doesn't have a modular structure - controllers, directives, etc are all lumped in together. Not great as the application grows. The next was <a href="https://github.com/ngbp/ngbp">ngBoilerplate</a>; this is an awesome project. Grunt has been my goto task runner for a while, so the high level of automation ticked a lot of boxes. It did however have a few downsides:</p>
+<ul>
+<li>Used LESS (I wanted to use SASS)</li>
+<li>Used Bootstap (A bit heavy for my needs)</li>
+<li>The Grunt build process (although awesome) was complicated and had build steps for Coffeescript source and the like. I didn't need this.</li>
+</ul>
+<p>I actually ended up forking it and adding in SASS support and removing bootstrap and coffeescript support, however at the same time I was playing around with Gulp. Seemed like a good opportunity to try it out on a real world project, hence the creation of <a href="https://github.com/willogden/angular-acorn">angular-acorn</a>.</p>
+<p>Here are some of the features:</p>
+<ul>
+<li>Uses Gulp for build automation (gulp build, gulp release, gulp test, gulp watch are the main tasks you would want to use...but take a look at the Gulpfile)</li>
+<li>Browserify for dependency management. I've used RequireJS a lot in previous projects, but with the rise of NPM I think Browserify is the future!</li>
+<li>SASS/Bourbon/Bitters for CSS and base style and typography.</li>
+<li>Susy/Breakpoint for killer semantic grids and media query management</li>
+<li>Jasmine/Karma for testing</li>
+<li>Angular-UI Router (which is amazing)</li>
+<li>(Basic) mobile first responsive design with off canvas navbar</li>
+<li>IE8 Support...at the moment.</li>
+</ul>
+<p>Here's a <a href="/en/demos/angular-acorn/index.html">demo</a> of the release version.</p>
+<p>Still some work to be done (notably around responsive image support), but a good first step. Hope it's useful to someone. All feedback welcome.</p> 
+      </div>
+        <div class="comments">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+              /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+              var disqus_shortname = "willogden1"; // required: replace example with your forum shortname
+
+              /* * * DON'T EDIT BELOW THIS LINE * * */
+              (function() {
+                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+  </section>
+
+	        </div>
+	    </div>
+	</div>
+
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-41253807-2");
+            pageTracker._trackPageview();
+            } catch(err) {}
+    </script>
+
+
+
+</body>
+</html>
