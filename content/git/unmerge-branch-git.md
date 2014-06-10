@@ -1,7 +1,7 @@
 Title: Unmerging a branch in git
 Date: 2014-04-22 10:45
-Category: DevOps
-Tags: DevOps
+Category: Git
+Tags: Git
 Slug: unmerge-branch-git
 Author: Will Ogden
 Summary: When people change their mind, use git to rewind...

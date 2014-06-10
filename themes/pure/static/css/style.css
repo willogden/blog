@@ -140,21 +140,24 @@ h3 {
     background: #999;
     font-size: 80%;
 }
-    .post-category-Python {
-        background: #5aba59;
-    }
-    .post-category-Django {
-        background: #4d85d1;
-    }
-    .post-category-Javascript {
-        background: #8156a7;
-    }
-    .post-category-DevOps {
-        background: #df2d4f;
-    }
-    .post-category-Cycling {
-        background: rgb(243, 123, 29)
-    }
+.post-category-Python {
+    background: #5aba59;
+}
+.post-category-Django {
+    background: #4d85d1;
+}
+.post-category-Javascript {
+    background: #8156a7;
+}
+.post-category-DevOps {
+    background: #df2d4f;
+}
+.post-category-Cycling {
+    background: #e97c07;
+}
+.post-category-Git {
+    background: #bdc02a;
+}
 
 .post-images {
     margin: 1em 0;
