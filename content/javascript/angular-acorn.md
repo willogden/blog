@@ -4,7 +4,7 @@ Category: Javascript
 Tags: javascript
 Slug: angular-acorn
 Author: Will Ogden
-Summary: A an AngularJS seed app using Browserify and Gulp...
+Summary: An AngularJS seed app using Browserify and Gulp...
 
 As my first look into using AngularJS for a major project, I really wanted to get the app structured correctly from the go get. So many times I've built an application only to have to massively refactor after the inevitable feature requests and spec creep.
 
