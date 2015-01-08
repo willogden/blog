@@ -26,3 +26,5 @@ After a bit of playing around I came up with a custom tag that allows the captur
 	<ul class="my_component">
 	{{ list_html }}
 	</ul>
+
+Grab the tag code [here]("https://gist.github.com/willogden/09574bbb526fd124c9d4"). Enjoy!
