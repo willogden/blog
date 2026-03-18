@@ -1,0 +1,74 @@
+baseURL: "https://willo.gd/en/"
+title: "willo.gd/en"
+paginate: 10
+theme: ["PaperMod"]
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production
+  title: "willo.gd/en"
+  description: "Father, Engineer, Cliché"
+  author: "Will Ogden"
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: false
+  comments: false
+  hideSummary: false
+
+  homeInfoParams:
+    Title: "Hi, I'm Will Ogden"
+    Content: "Father, Software Engineer, Cliché. Based in Worthing, UK."
+
+  socialIcons:
+    - name: linkedin
+      url: "https://www.linkedin.com/in/will-ogden-55571327/"
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 1
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 10
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 20
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 30
+
+markup:
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+
+pygmentsUseClasses: true

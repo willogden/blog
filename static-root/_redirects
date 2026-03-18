@@ -1,0 +1,17 @@
+# Redirect root to /en/
+/   /en/    301
+
+# Redirect old Pelican category URLs to Hugo taxonomy URLs
+/en/category/:slug.html     /en/categories/:slug/   301
+
+# Redirect old Pelican tag URLs to Hugo taxonomy URLs
+/en/tag/:slug.html          /en/tags/:slug/         301
+
+# Redirect old author pages
+/en/author/:slug.html       /en/                    301
+
+# Redirect old index pages
+/en/index2.html             /en/                    301
+/en/archives.html           /en/archives/           301
+/en/tags.html               /en/tags/               301
+/en/categories.html         /en/categories/         301
