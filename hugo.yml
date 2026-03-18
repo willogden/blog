@@ -37,6 +37,7 @@ params:
   UseHugoToc: false
   comments: false
   hideSummary: false
+  mainSections: ["posts"]
 
   socialIcons:
     - name: linkedin
@@ -48,9 +49,9 @@ menu:
       name: Home
       url: /
       weight: 1
-    - identifier: archives
-      name: Archives
-      url: /archives/
+    - identifier: posts
+      name: Posts
+      url: /posts/
       weight: 10
     - identifier: search
       name: Search
