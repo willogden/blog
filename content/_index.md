@@ -1,7 +1,5 @@
 ---
-title: "About"
-layout: "page"
-aliases: ["/pages/about.html"]
+title: "Hello."
 ---
 
 At the end of the day, tech should solve human problems, not create new ones. I’m a builder at heart who loves turning big philosophies into real-world results.

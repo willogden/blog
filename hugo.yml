@@ -38,10 +38,6 @@ params:
   comments: false
   hideSummary: false
 
-  homeInfoParams:
-    Title: "Hi, I'm Will Ogden"
-    Content: "Father, Software Engineer, Cliché. Based in Worthing, UK."
-
   socialIcons:
     - name: linkedin
       url: "https://www.linkedin.com/in/will-ogden-55571327/"
